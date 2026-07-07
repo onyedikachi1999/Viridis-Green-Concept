@@ -27,7 +27,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
-                <a href="mailto:hello@viridisgreenconcept.com" style={{ color: 'rgba(255, 255, 255, 0.85)' }}>hello@viridisgreenconcept.com</a>
+                <a href="mailto:support@viridisgreenconcept.com" style={{ color: 'rgba(255, 255, 255, 0.85)' }}>support@viridisgreenconcept.com</a>
               </div>
               
               {/* Techy Social and WhatsApp Chips */}
@@ -76,6 +76,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               <li><a href="#products">Buyby</a></li>
               <li><a href="#products">TMail</a></li>
               <li><a href="#products">Eleven</a></li>
+              <li><a href="#products">Stelloo</a></li>
             </ul>
           </div>
           <div>

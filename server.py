@@ -34,7 +34,7 @@ SMTP_HOST = os.environ.get("SMTP_HOST", "")
 SMTP_PORT = int(os.environ.get("SMTP_PORT", "587"))
 SMTP_USER = os.environ.get("SMTP_USER", "")
 SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
-SMTP_FROM = os.environ.get("SMTP_FROM", "hello@viridisgreenconcept.com")
+SMTP_FROM = os.environ.get("SMTP_FROM", "support@viridisgreenconcept.com")
 EMAIL_LOGS_PATH = os.path.join(DB_DIR, "email_logs.txt")
 
 def send_notification_email(to_email: str, subject: str, body: str):
