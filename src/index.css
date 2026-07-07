@@ -990,10 +990,50 @@ nav.links a:hover::after, nav.links a.active::after {
 }
 
 /* SOLUTIONS / ECOSYSTEM */
+#solutions {
+  background: #030d0a; /* Dark background matching Why Viridis */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* Subtle grid line overlay in background */
+#solutions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(126, 217, 87, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 217, 87, 0.01) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#solutions .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+#solutions .section-head h2 {
+  color: #fff;
+}
+
+#solutions .section-head p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .eco-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
+  position: relative;
+  z-index: 2;
 }
 
 @media(max-width: 1020px) {
@@ -1009,28 +1049,57 @@ nav.links a:hover::after, nav.links a.active::after {
 }
 
 .eco-card {
-  border-radius: var(--r);
-  padding: 36px 32px;
-  border: 1px solid var(--line);
-  background: linear-gradient(160deg, var(--card), var(--paper-dim));
-  transition: var(--transition);
+  border-radius: 16px;
+  padding: 40px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.45s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide in glowing accent bar on hover */
+.eco-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--leaf-2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.eco-card:hover::before {
+  transform: scaleX(1);
 }
 
 .eco-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(31, 168, 102, 0.2);
-  box-shadow: 0 12px 30px -15px rgba(11,61,46,0.1);
+  transform: translateY(-8px) !important;
+  border-color: rgba(126, 217, 87, 0.3) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  box-shadow: 0 24px 48px -20px rgba(11, 61, 46, 0.7) !important;
 }
 
 .eco-card .eyebrow {
   margin-bottom: 18px;
+  color: var(--leaf-2);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 
 .eco-card h3 {
   font-size: 24px;
   text-transform: none;
-  color: var(--forest-deep);
-  margin: 0 0 16px;
+  color: #fff;
+  margin: 0 0 20px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
 }
 
 .eco-card ul {
@@ -1043,21 +1112,33 @@ nav.links a:hover::after, nav.links a.active::after {
 }
 
 .eco-card li {
-  font-size: 14.5px;
-  color: var(--ink-soft);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
   padding-left: 20px;
   position: relative;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.eco-card:hover li {
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .eco-card li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 7px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: var(--leaf-1);
+  transition: all 0.3s ease;
+}
+
+.eco-card:hover li::before {
+  background: var(--leaf-2);
+  box-shadow: 0 0 6px var(--leaf-2);
 }
 
 /* PARTNERS / FORMS */
