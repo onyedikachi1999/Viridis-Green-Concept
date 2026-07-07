@@ -379,6 +379,21 @@ def delete_inquiry(
     return {"success": True, "message": "Inquiry deleted successfully."}
 
 
-# Serve React static build files (only if the dist folder exists)
-if os.path.exists("dist"):
-    app.mount("/", StaticFiles(directory="dist", html=True), name="static")
+# SPA Routing Fallback: Serve static files or fallback to index.html
+@app.get("/{catchall:path}")
+def read_index(catchall: str):
+    # Check if the requested path matches an actual file in the dist folder
+    file_path = os.path.join("dist", catchall)
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        return FileResponse(file_path)
+        
+    # Ignore API routes to avoid returning HTML for failed API endpoints
+    if catchall.startswith("api/"):
+        raise HTTPException(status_code=404, detail="API route not found")
+        
+    # Fall back to index.html for SPA routing (e.g. /admin)
+    index_path = os.path.join("dist", "index.html")
+    if os.path.exists(index_path):
+        return FileResponse(index_path)
+        
+    raise HTTPException(status_code=404, detail="Not Found")
