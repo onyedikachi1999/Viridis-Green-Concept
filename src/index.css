@@ -992,7 +992,7 @@ nav.links a:hover::after, nav.links a.active::after {
 /* SOLUTIONS / ECOSYSTEM */
 /* SOLUTIONS / ECOSYSTEM */
 #solutions {
-  background: var(--paper-dim); /* Soft light gray/cream background */
+  background: var(--paper); /* Lighter than partners/investors which uses --paper-dim */
   color: var(--ink);
   position: relative;
   overflow: hidden;
