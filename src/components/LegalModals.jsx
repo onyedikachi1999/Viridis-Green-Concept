@@ -206,13 +206,14 @@ export function ProductModal({ type, productName, onClose, onToast }) {
       case 'learn_buyby':
         return (
           <div>
-            <p><strong>Buyby</strong> is engineered to streamline business payment reconciliation and transaction support. It provides:</p>
+            <p><strong>Buyby</strong> is an offline-first, SMS-based transaction router designed for users with little to no internet connectivity or access to smart mobile devices. It provides:</p>
             <ul>
-              <li><strong>Automated Ledger Reconciliation:</strong> Cross-reference bank statements with internal ledger records instantly.</li>
-              <li><strong>Secure Approval Workflows:</strong> Setup multi-signature authorization processes for outgoing payments.</li>
-              <li><strong>API Integrations:</strong> Connect your accounting software with top Nigerian payment infrastructure.</li>
+              <li><strong>Direct Bank-to-Bank Trust:</strong> Buyby is a decentralized payment router that links bank accounts directly and moves funds on-demand. It never acts as a wallet or a custodian of customer funds.</li>
+              <li><strong>Google Gemini NLP Engine:</strong> Interprets natural language SMS transaction requests (e.g., <em>"send 5000 to Access bank..."</em>) to automatically parse intents and payment details.</li>
+              <li><strong>Double-Leg Settlement:</strong> Splits transfers into Leg 1 (charging the sender's linked Flutterwave account authorization token) and Leg 2 (immediate payout transfer to the receiver's bank).</li>
+              <li><strong>Security & Self-Healing:</strong> Features a 5-attempt PIN lockout protection, transaction velocity throttling, risk scoring algorithms, and self-healing cron recovery jobs.</li>
             </ul>
-            <p style={{ marginTop: '16px' }}>For custom institutional packages, please contact <strong>support@viridisgreenconcept.com</strong>.</p>
+            <p style={{ marginTop: '16px' }}>For custom setup guides and developer APIs, please contact <strong>support@viridisgreenconcept.com</strong>.</p>
           </div>
         );
       case 'learn_stelloo':
