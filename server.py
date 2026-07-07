@@ -9,6 +9,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from fastapi import FastAPI, HTTPException, Header, Response, status
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
 
@@ -376,3 +377,8 @@ def delete_inquiry(
     db[type_name].pop(index)
     write_db(db)
     return {"success": True, "message": "Inquiry deleted successfully."}
+
+
+# Serve React static build files (only if the dist folder exists)
+if os.path.exists("dist"):
+    app.mount("/", StaticFiles(directory="dist", html=True), name="static")
