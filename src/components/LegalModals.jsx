@@ -212,7 +212,7 @@ export function ProductModal({ type, productName, onClose, onToast }) {
               <li><strong>Secure Approval Workflows:</strong> Setup multi-signature authorization processes for outgoing payments.</li>
               <li><strong>API Integrations:</strong> Connect your accounting software with top Nigerian payment infrastructure.</li>
             </ul>
-            <p style={{ marginTop: '16px' }}>For custom institutional packages, please contact <strong>sales@viridisgreenconcept.com</strong>.</p>
+            <p style={{ marginTop: '16px' }}>For custom institutional packages, please contact <strong>support@viridisgreenconcept.com</strong>.</p>
           </div>
         );
       case 'learn_stelloo':
