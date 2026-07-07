@@ -60,6 +60,28 @@ export default function Products({ onAction }) {
           <circle cx="30" cy="30" r="20" stroke="rgba(126,217,87,0.1)" strokeWidth="1" className="expanding-wave-slow" />
         </svg>
       )
+    },
+    {
+      id: 'stelloo',
+      tag: 'Logistics / On-Demand Services',
+      title: 'Stelloo',
+      desc: 'An on-demand laundry operations and logistics platform connecting clients, local service providers, and pickup/delivery runners.',
+      actions: [
+        { label: 'Learn More', type: 'primary', action: 'learn_stelloo' },
+        { label: 'Join Waitlist', type: 'ghost', action: 'waitlist_stelloo' }
+      ],
+      visualizer: (
+        <svg width="64" height="64" viewBox="0 0 60 60" fill="none" stroke="currentColor" style={{ color: 'var(--leaf-1)' }}>
+          <circle cx="30" cy="30" r="24" stroke="rgba(31, 168, 102, 0.15)" strokeWidth="1" />
+          {/* Washing drum ring rotating */}
+          <circle cx="30" cy="30" r="18" stroke="rgba(126, 217, 87, 0.3)" strokeWidth="1.5" strokeDasharray="6 14" className="laundry-drum" />
+          {/* Central clothing hanger */}
+          <path d="M22 36 L25 28 L30 25 L35 28 L38 36 Z" stroke="var(--leaf-1)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="stelloo-hanger" />
+          <path d="M30 25 C30 21, 33 21, 33 23" stroke="var(--leaf-1)" strokeWidth="2.2" strokeLinecap="round" />
+          {/* Delivery runner bubble indicator */}
+          <circle cx="48" cy="30" r="3" fill="var(--leaf-2)" className="delivery-node" />
+        </svg>
+      )
     }
   ];
 
@@ -77,7 +99,7 @@ export default function Products({ onAction }) {
       <div className="wrap">
         <div className="section-head reveal in">
           <div className="eyebrow">Our Products</div>
-          <h2>Three products. One growing ecosystem.</h2>
+          <h2>Four products. One growing ecosystem.</h2>
           <p>Each Viridis product solves a distinct problem — together, they form the foundation of a connected digital life.</p>
         </div>
         

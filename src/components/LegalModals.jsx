@@ -122,6 +122,7 @@ export function ProductModal({ type, productName, onClose, onToast }) {
     switch (type) {
       case 'waitlist_buyby':
       case 'waitlist_eleven':
+      case 'waitlist_stelloo':
         return (
           <>
             <p>We are currently operating in a private beta. Enter your business email below to secure early access when we roll out new invites.</p>
@@ -212,6 +213,19 @@ export function ProductModal({ type, productName, onClose, onToast }) {
               <li><strong>API Integrations:</strong> Connect your accounting software with top Nigerian payment infrastructure.</li>
             </ul>
             <p style={{ marginTop: '16px' }}>For custom institutional packages, please contact <strong>sales@viridisgreenconcept.com</strong>.</p>
+          </div>
+        );
+      case 'learn_stelloo':
+        return (
+          <div>
+            <p><strong>STELLOO</strong> is a mobile and web-based on-demand laundry and logistics platform connecting laundry service providers, delivery runners, and clients.</p>
+            <ul>
+              <li><strong>Service Provider Console:</strong> Web-based catalog management, document KYC processing, fabric care advisories, and revenue reporting.</li>
+              <li><strong>Runners Logistics:</strong> Zone assignment, real-time routing, pickup flows, and earnings tracking.</li>
+              <li><strong>Client Mobile App:</strong> Proximity-based vendor matching, visual order tracking timelines, loyalty credits, and referral bonuses.</li>
+              <li><strong>Revenue Share Engine:</strong> Auto-split payments among providers, delivery runners, and the STELLOO platform.</li>
+            </ul>
+            <p style={{ marginTop: '16px' }}>For vendor onboarding queries, please contact <strong>partners@viridisgreenconcept.com</strong>.</p>
           </div>
         );
       case 'learn_tmail':

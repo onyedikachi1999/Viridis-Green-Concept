@@ -10,7 +10,6 @@ export default function Header() {
       <div className="nav">
         <a href="#home" className="brand">
           <img src="/logo.png" alt="Viridis Green Concept Logo" />
-          <span>Viridis</span>
         </a>
         
         <nav className="links">
