@@ -16,16 +16,24 @@ export function PrivacyModal({ onClose }) {
           <h4>1. Information We Collect</h4>
           <p>We collect information you provide directly to us when using our services. This includes:</p>
           <ul>
-            <li><strong>Fintech Operations (Buyby):</strong> Business name, email address, transaction records, reconciliation preferences, and contact details for payment coordination.</li>
+            <li><strong>Fintech Operations (Buyby):</strong> Phone numbers, bank account numbers, tokenized payment authorizations, transaction PINs (stored as secure hashes), natural language SMS commands, and double-leg settlement references. Buyby serves as a transaction router and does not act as a wallet or hold customer funds directly.</li>
             <li><strong>Mail Services (TMail):</strong> Temporary routing data. We do not link temporary email sessions to your permanent identity unless explicitly configured by you.</li>
             <li><strong>Faith-Based Chat (Eleven):</strong> Conversation logs used strictly to personalize your engagement with biblical texts and reflections.</li>
           </ul>
 
           <h4>2. How We Use Your Information</h4>
-          <p>We use your information to operate, maintain, and improve our products. This includes facilitating business transaction workflows on Buyby, delivering temporary communications on TMail, and tailoring faith reflections on Eleven. We also use your contact details to provide customer support.</p>
+          <p>We use your information to operate, maintain, and improve our products. This includes executing SMS-based transaction routing on Buyby, delivering temporary communications on TMail, and tailoring faith reflections on Eleven. We also use your contact details to provide customer support.</p>
 
           <h4>3. Sharing and Third-Party Processors</h4>
-          <p>We do not sell your personal data. We only share information with trustworthy third-party service providers (such as digital payment processors, including <strong>Monnify</strong>) to facilitate secure financial transactions. All data sharing is conducted in compliance with applicable Nigerian data protection laws (NDPR).</p>
+          <p>We do not sell your personal data. We only share information with trustworthy third-party service providers to facilitate operations. This includes:
+            <ul>
+              <li><strong>Flutterwave</strong>: To resolve bank accounts, execute tokenized bank debits, and route outward payout transfers.</li>
+              <li><strong>Africa's Talking</strong>: To transmit SMS interactive menus, receipt alerts, and session updates.</li>
+              <li><strong>Google Gemini</strong>: To parse natural language SMS transaction intents (messages are evaluated in memory and not stored permanently).</li>
+              <li><strong>Monnify</strong>: To process invoice payments for custom institutional service tiers.</li>
+            </ul>
+            All sharing is conducted in compliance with applicable Nigerian data protection laws (NDPR).
+          </p>
 
           <h4>4. Data Security</h4>
           <p>We implement industry-standard administrative, technical, and physical security measures to safeguard your financial and personal information against unauthorized access, loss, or modification.</p>
