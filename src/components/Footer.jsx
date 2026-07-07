@@ -19,7 +19,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <span>No. 11, Yunusa adedeji street of Muslim Avenue Ikeja Lagos, Nigeria</span>
+                <span>16, Ninuola Street, Magodo Brooks, CMD Road, Ikeja Lagos, Nigeria</span>
               </div>
               
               <div className="contact-item" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13.5px' }}>
