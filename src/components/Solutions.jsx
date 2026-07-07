@@ -28,6 +28,15 @@ export default function Solutions() {
         'Prayer & reflection support',
         'Purpose-driven interaction'
       ]
+    },
+    {
+      title: 'Stelloo',
+      category: 'On-Demand Logistics & Laundry',
+      points: [
+        'On-demand laundry provider connection',
+        'Verified runner logistics & routing',
+        'Automated revenue share splits'
+      ]
     }
   ];
 
