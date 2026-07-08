@@ -13,7 +13,7 @@ export default function About() {
             Viridis Green Concept is a technology company building intelligent digital assets across fintech, communication, productivity, and purposeful living. We design products that solve real, everyday friction — moving money, sending mail, and supporting reflection — with the discipline of enterprise software and the warmth of human-centred design.
           </p>
           <p style={{ marginBottom: '32px' }}>
-            Our mission is to build trustworthy digital infrastructure for African markets and beyond, starting with three flagship products: Buyby, TMail, and Eleven. Our vision is a connected ecosystem of tools that work quietly and well, so the people who use them can focus on what matters.
+            Our mission is to build trustworthy digital infrastructure for African markets and beyond. Our vision is a connected ecosystem of tools that work quietly and well, so the people who use them can focus on what matters.
           </p>
           <div className="values-grid">
             {/* Trust Card */}
