@@ -10,8 +10,8 @@ export function PrivacyModal({ onClose }) {
           <button className="modal-close" onClick={onClose}>✕</button>
         </div>
         <div className="modal-content">
-          <p><em>Last Updated: July 2, 2026</em></p>
-          <p>Viridis Green Concept ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information across our family of digital products: Buyby, TMail, and Eleven.</p>
+          <p><em>Last Updated: July 8, 2026</em></p>
+          <p>Viridis Green Concept ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information across our family of digital products: Buyby, TMail, Eleven, and Stelloo.</p>
           
           <h4>1. Information We Collect</h4>
           <p>We collect information you provide directly to us when using our services. This includes:</p>
@@ -19,10 +19,11 @@ export function PrivacyModal({ onClose }) {
             <li><strong>Fintech Operations (Buyby):</strong> Phone numbers, bank account numbers, tokenized payment authorizations, transaction PINs (stored as secure hashes), natural language SMS commands, and double-leg settlement references. Buyby serves as a transaction router and does not act as a wallet or hold customer funds directly.</li>
             <li><strong>Mail Services (TMail):</strong> Temporary routing data. We do not link temporary email sessions to your permanent identity unless explicitly configured by you.</li>
             <li><strong>Faith-Based Chat (Eleven):</strong> Conversation logs used strictly to personalize your engagement with biblical texts and reflections.</li>
+            <li><strong>On-Demand Logistics & Laundry (Stelloo):</strong> Business registration details, branch locations, service pricing matrices, uploaded policy documents, business logos, and logistics runner delivery coordinates.</li>
           </ul>
 
           <h4>2. How We Use Your Information</h4>
-          <p>We use your information to operate, maintain, and improve our products. This includes executing SMS-based transaction routing on Buyby, delivering temporary communications on TMail, and tailoring faith reflections on Eleven. We also use your contact details to provide customer support.</p>
+          <p>We use your information to operate, maintain, and improve our products. This includes executing SMS-based transaction routing on Buyby, delivering temporary communications on TMail, tailoring faith reflections on Eleven, and coordinating laundry provider logistics on Stelloo. We also use your contact details to provide customer support.</p>
 
           <h4>3. Sharing and Third-Party Processors</h4>
           <p>We do not sell your personal data. We only share information with trustworthy third-party service providers to facilitate operations. This includes:
@@ -39,7 +40,7 @@ export function PrivacyModal({ onClose }) {
           <p>We implement industry-standard administrative, technical, and physical security measures to safeguard your financial and personal information against unauthorized access, loss, or modification.</p>
 
           <h4>5. Your Rights and Contact Info</h4>
-          <p>Under the NDPR, you have rights to access, rectify, or delete your personal data. For privacy-related inquiries, contact our Data Protection Officer at <strong>privacy@viridisgreenconcept.com</strong> or our physical address: No. 11, Yunusa adedeji street of Muslim Avenue Ikeja Lagos, Nigeria.</p>
+          <p>Under the NDPR, you have rights to access, rectify, or delete your personal data. For privacy-related inquiries, contact our Data Protection Officer at <strong>support@viridisgreenconcept.com</strong> or our physical address: 16, Ninuola Street, Magodo Brooks, CMD Road, Ikeja Lagos, Nigeria.</p>
         </div>
       </div>
     </div>
@@ -55,8 +56,8 @@ export function TermsModal({ onClose }) {
           <button className="modal-close" onClick={onClose}>✕</button>
         </div>
         <div className="modal-content">
-          <p><em>Last Updated: July 2, 2026</em></p>
-          <p>Welcome to Viridis Green Concept. By accessing or using our website and digital products (Buyby, TMail, Eleven), you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.</p>
+          <p><em>Last Updated: July 8, 2026</em></p>
+          <p>Welcome to Viridis Green Concept. By accessing or using our website and digital products (Buyby, TMail, Eleven, Stelloo), you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.</p>
 
           <h4>1. Eligibility & User Accounts</h4>
           <p>You must be at least 18 years old or possess legal business authorization in Nigeria to create a merchant or user account on our SaaS platforms. You are responsible for safeguarding your credentials and for all activities that occur under your account.</p>
@@ -66,11 +67,12 @@ export function TermsModal({ onClose }) {
             <li><strong>Buyby:</strong> You agree to use transaction-support utilities solely for legitimate, authorized business operations. Any attempt to facilitate fraudulent, illegal, or unauthorized transfers is strictly prohibited and will result in immediate termination.</li>
             <li><strong>TMail:</strong> Temporary email addresses are provided for convenience and privacy. They must not be used to register accounts for spamming, harassment, or malicious activity.</li>
             <li><strong>Eleven:</strong> The faith-centered engine is for spiritual reflection and biblically-guided study. Users must engage respectfully with the platform.</li>
+            <li><strong>Stelloo:</strong> Laundry service providers and logistics runners agree to adhere to local trade regulations, branch pricing, and return policies uploaded to their profiles. Clients must comply with selected provider guidelines.</li>
           </ul>
 
           <h4>3. Billing, Fees & Refund Policy</h4>
-          <p>Access to certain features of Buyby is subscription-based or subject to transaction coordination fees. Fees are detailed clearly at point of setup. All payments processed via our payment gateway (Monnify) are securely authenticated. </p>
-          <p><strong>Refund Policy:</strong> Due to the digital nature of our SaaS tools, subscriptions and service fees are generally non-refundable. However, if a billing discrepancy occurs, or you feel you were incorrectly charged, please contact us at <strong>billing@viridisgreenconcept.com</strong> within 7 days of the transaction for a review and resolution.</p>
+          <p>Access to certain features of Buyby and Stelloo is subscription-based or subject to transaction coordination fees. Fees are detailed clearly at point of setup. All payments processed via our payment gateway (Monnify) are securely authenticated. </p>
+          <p><strong>Refund Policy:</strong> Due to the digital nature of our SaaS tools, subscriptions and service fees are generally non-refundable. However, if a billing discrepancy occurs, or you feel you were incorrectly charged, please contact us at <strong>support@viridisgreenconcept.com</strong> within 7 days of the transaction for a review and resolution.</p>
 
           <h4>4. Limitation of Liability</h4>
           <p>To the maximum extent permitted by Nigerian law, Viridis Green Concept shall not be liable for any indirect, incidental, special, or consequential damages resulting from your use of or inability to use our digital assets.</p>
