@@ -7,6 +7,31 @@ export default function About() {
         <div>
           <div className="eyebrow" style={{ color: 'var(--leaf-1)', letterSpacing: '2px', textTransform: 'uppercase', fontSize: '11px', fontWeight: '700' }}>About Us</div>
           <h2 style={{ fontSize: '38px', marginTop: '16px' }}>The parent company behind a growing family of digital products</h2>
+          
+          {/* Founder Signature Bubble */}
+          <div className="founder-bubble" style={{
+            marginTop: '32px',
+            padding: '24px',
+            background: 'rgba(255, 255, 255, 0.45)',
+            border: '1px solid rgba(255, 255, 255, 0.65)',
+            borderRadius: '16px',
+            backdropFilter: 'blur(10px)',
+            boxShadow: '0 8px 32px 0 rgba(11, 61, 46, 0.04)'
+          }}>
+            <p style={{
+              fontSize: '14px',
+              lineHeight: '1.65',
+              color: 'var(--ink)',
+              margin: '0 0 16px 0',
+              fontStyle: 'italic'
+            }}>
+              "Welcome to Viridis Green Concept, where bold ideas become intelligent digital solutions. We build innovative platforms in fintech, AI, communication, and SaaS that solve real-world challenges. Discover our growing ecosystem, including BuyBy, TMail, Stelloo and Eleven, designed for security, scalability, and impact. Together, we're shaping the future of technology for Africa and beyond."
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+              <strong style={{ color: 'var(--forest-deep)', fontSize: '14px' }}>Akinlara Babalola</strong>
+              <span style={{ color: 'var(--ink-soft)', fontSize: '12px' }}>President & Founder</span>
+            </div>
+          </div>
         </div>
         <div>
           <p>
